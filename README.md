@@ -6,11 +6,9 @@ A real-time collaborative whiteboard application built with React, Node.js, and 
 
 - Real-time drawing collaboration
 - Multiple drawing tools (brush, line, rectangle, circle, arrow, text)
-- Color and size customization
 - User authentication
 - Canvas sharing
 - Save and load functionality
-- Undo/Redo operations
 
 ## Tech Stack
 
@@ -42,13 +40,13 @@ npm install
 
 Create a `.env` file in the Backend directory with:
 ```
-MONGO_URI=your_mongodb_connection_string
+MONGO_URL=your_mongodb_connection_string
 JWT_SECRET=your_secret_key
 ```
 
 ### Frontend Setup
 ```bash
-cd Frontend/whiteboard-tutorial
+cd Frontend
 npm install
 ```
 
@@ -62,6 +60,6 @@ npm run dev
 
 ### Start the Frontend
 ```bash
-cd Frontend/whiteboard-tutorial
-npm start
+cd Frontend
+npm run start
 ```
