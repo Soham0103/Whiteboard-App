@@ -90,10 +90,10 @@ io.on("connection", (socket) => {
           socket.to(canvasId).emit("receiveDrawingUpdate", elements);
     
           const canvas = await Canvas.findById(canvasId);
-          if (canvas) {
+          //if (canvas) {
             // console.log('updating canvas... ', i++)
             await Canvas.findByIdAndUpdate(canvasId, { elements }, { new: true, useFindAndModify: false });
-          }
+          //}
         } catch (error) {
           console.error(error);
         }
